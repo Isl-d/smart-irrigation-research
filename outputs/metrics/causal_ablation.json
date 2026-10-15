@@ -1,0 +1,112 @@
+[
+  {
+    "config": "A. Non-causal, full (as submitted)",
+    "n_features": 24,
+    "n_train": 7615,
+    "n_test": 3265,
+    "MAE": 1.9158848761612266,
+    "RMSE": 8.73401851026476,
+    "R2": 0.793181148586031,
+    "total_pred_m3": 10683.740910307679,
+    "total_actual_m3": 9925.0
+  },
+  {
+    "config": "B. Causal, with irrigation history",
+    "n_features": 24,
+    "n_train": 7615,
+    "n_test": 3265,
+    "MAE": 1.9702199503464037,
+    "RMSE": 8.249712733400894,
+    "R2": 0.8154816518525035,
+    "total_pred_m3": 11252.003471332462,
+    "total_actual_m3": 9925.0
+  },
+  {
+    "config": "C. Causal, without irrigation history",
+    "n_features": 23,
+    "n_train": 7615,
+    "n_test": 3265,
+    "MAE": 4.217662855671021,
+    "RMSE": 13.449658518006034,
+    "R2": 0.509561651067375,
+    "total_pred_m3": 15445.221580971871,
+    "total_actual_m3": 9925.0
+  },
+  {
+    "config": "ladder-nohist: Soil moisture only",
+    "n_features": 1,
+    "n_train": 7615,
+    "n_test": 3265,
+    "MAE": 5.400912224770121,
+    "RMSE": 18.284217929747278,
+    "R2": 0.09361087965248505,
+    "total_pred_m3": 10014.453559392248,
+    "total_actual_m3": 9925.0
+  },
+  {
+    "config": "ladder-nohist: Soil suite (moisture+EC+temp)",
+    "n_features": 3,
+    "n_train": 7615,
+    "n_test": 3265,
+    "MAE": 7.559921771949307,
+    "RMSE": 20.86341498602838,
+    "R2": -0.18013773981685222,
+    "total_pred_m3": 21804.203272475042,
+    "total_actual_m3": 9925.0
+  },
+  {
+    "config": "ladder-nohist: All raw sensors",
+    "n_features": 7,
+    "n_train": 7615,
+    "n_test": 3265,
+    "MAE": 5.877519766072579,
+    "RMSE": 14.832422074973602,
+    "R2": 0.40353350040974734,
+    "total_pred_m3": 20799.281063260925,
+    "total_actual_m3": 9925.0
+  },
+  {
+    "config": "ladder-nohist: Raw + agronomic indicators",
+    "n_features": 10,
+    "n_train": 7615,
+    "n_test": 3265,
+    "MAE": 5.31475504422521,
+    "RMSE": 14.634034896619372,
+    "R2": 0.41938255736636443,
+    "total_pred_m3": 19332.307948454138,
+    "total_actual_m3": 9925.0
+  },
+  {
+    "config": "ladder-nohist: Full engineered (no irr-history)",
+    "n_features": 23,
+    "n_train": 7615,
+    "n_test": 3265,
+    "MAE": 4.217662855671021,
+    "RMSE": 13.449658518006034,
+    "R2": 0.509561651067375,
+    "total_pred_m3": 15445.221580971871,
+    "total_actual_m3": 9925.0
+  },
+  {
+    "config": "irr-history alone (1 feature)",
+    "n_features": 1,
+    "n_train": 7615,
+    "n_test": 3265,
+    "MAE": 5.114245873312149,
+    "RMSE": 20.127368104063244,
+    "R2": -0.09833768430897982,
+    "total_pred_m3": 17709.799124117228,
+    "total_actual_m3": 9925.0
+  },
+  {
+    "config": "soil moisture + irr-history (2)",
+    "n_features": 2,
+    "n_train": 7615,
+    "n_test": 3265,
+    "MAE": 1.977209975103638,
+    "RMSE": 9.338752263102094,
+    "R2": 0.7635498383646633,
+    "total_pred_m3": 8017.928553805036,
+    "total_actual_m3": 9925.0
+  }
+]

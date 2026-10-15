@@ -1,0 +1,50 @@
+{
+  "actual_total_m3": 9925.0,
+  "catboost_total_m3": 11078.7131,
+  "savings_m3": -1153.7131,
+  "savings_pct": -11.6,
+  "test_samples": 3285,
+  "sensor_configs": [
+    {
+      "name": "Soil moisture only",
+      "nf": 1,
+      "mae": 5.045,
+      "rmse": 17.9484,
+      "r2": 0.1214,
+      "total": 9291.0645,
+      "savings_pct": 6.3873
+    },
+    {
+      "name": "Soil suite (3 sensors)",
+      "nf": 3,
+      "mae": 7.6319,
+      "rmse": 22.1086,
+      "r2": -0.3331,
+      "total": 22714.9127,
+      "savings_pct": -128.8656
+    },
+    {
+      "name": "All raw sensors (7)",
+      "nf": 7,
+      "mae": 5.3707,
+      "rmse": 13.6037,
+      "r2": 0.4953,
+      "total": 20796.0553,
+      "savings_pct": -109.532
+    },
+    {
+      "name": "Raw sensors + indicators (10)",
+      "nf": 10,
+      "mae": 4.7878,
+      "rmse": 12.8166,
+      "r2": 0.552,
+      "total": 19533.137,
+      "savings_pct": -96.8074
+    }
+  ],
+  "full_model": {
+    "r2": 0.791,
+    "mae": 1.989,
+    "total_m3": 11078.7131
+  }
+}

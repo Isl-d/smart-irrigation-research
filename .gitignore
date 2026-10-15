@@ -7,4 +7,7 @@ __pycache__/
 *.pb
 *.h5
 *.ckpt
-*.pkl
+*.pkl.DS_Store
+.venv/
+__pycache__/
+catboost_info/

@@ -1,0 +1,56 @@
+{
+  "demand_total_m3": 9925.0,
+  "test_days": 24,
+  "irrigation_days": 2,
+  "test_start": "2023-08-21",
+  "test_end": "2023-09-13",
+  "moisture_setpoint": 19.720166666666664,
+  "mean_event_vol": 84.03075408935547,
+  "mean_daily_vol": 1265.129638671875,
+  "train_daily_mean": 1265.129638671875,
+  "test_daily_mean": 413.5416666666667,
+  "controllers": [
+    {
+      "total_m3": 29097.981689453125,
+      "over_m3": 26567.722412109375,
+      "under_m3": 7394.74072265625,
+      "total_error_m3": 33962.463134765625,
+      "vol_dev_pct": 193.1786568206864,
+      "waste_pct": 267.68486057540935,
+      "unmet_pct": 74.50620375472292,
+      "daily_mae_m3": 1415.1026306152344,
+      "precision": 0.08695652173913043,
+      "recall": 1.0,
+      "f1": 0.16,
+      "controller": "Fixed timer (daily)"
+    },
+    {
+      "total_m3": 504.1845245361328,
+      "over_m3": 0.0,
+      "under_m3": 9420.815475463867,
+      "total_error_m3": 9420.815475463867,
+      "vol_dev_pct": -94.92005516840169,
+      "waste_pct": 0.0,
+      "unmet_pct": 94.92005516840169,
+      "daily_mae_m3": 392.5339781443278,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "controller": "Moisture threshold (tuned)"
+    },
+    {
+      "total_m3": 11078.713123699945,
+      "over_m3": 2558.9550787625176,
+      "under_m3": 1405.2419550625737,
+      "total_error_m3": 3964.1970338250912,
+      "vol_dev_pct": 11.624313588916321,
+      "waste_pct": 25.782922707934684,
+      "unmet_pct": 14.158609119018376,
+      "daily_mae_m3": 165.1748764093788,
+      "precision": 0.08695652173913043,
+      "recall": 1.0,
+      "f1": 0.16,
+      "controller": "ML \u2014 CatBoost"
+    }
+  ]
+}
